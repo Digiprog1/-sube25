@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Dahlia - Theme Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- bootstrap style -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- main style -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- et-line-awesome icon -->
+    <link rel="stylesheet" href="css/et-line-icons.css" />
+    <!-- scrollbar -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" href="css/doc.min.css" />
+</head>
+
+<body>
+    <!-- Begin Body -->
+    <div class="container-fluid no-padding">
+        <div class="row no-margin">
+            <div class="col-md-12">
+                <div class="docs-navigation no-padding-left" id="leftCol">
+                    <ul class="nav nav-stacked" id="sidebar">
+                        <li class="active"><a class="sec-link" href="#start">Start</a>
+                            <ul>
+                                <li><a href="#start-welcome" class="inner-link">Welcome</a></li>
+                                <li><a href="#start-installation" class="inner-link">Installation</a></li>
+                                <li><a href="#start-html-structure" class="inner-link">HTML Structure</a></li>
+                                <li><a href="#start-page-link" class="inner-link">Page Link</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sec-link" href="#contact-form">RSVP Form</a></li>
+                        <li><a class="sec-link" href="#credits">Credits & Sources</a></li>
+                        <li><a class="sec-link" href="#refund-policy">Refund Policy</a></li>
+                    </ul>
+                    <span class="copyright text-center">&copy; 2023. <a href="https://themeforest.net/user/lucky_roo" class="text-primary" target="_blank">lucky_roo</a></span>
+                </div>
+                <div class="docs-content" id="mainCol">
+                    <!-- start section -->
+                    <section id="start">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 docs-content-inner" id="start-welcome">
+                                    <h1>Dahlia - Responsive Wedding Invitation</h1>
+                                    <p>Dear customers, thank you for choosing our products. In this document, you will find an in-depth description of all the template's features and functionality.</p>
+                                    <p>If you have any questions not attended to by our template documentation, please contact us. If you like our template, please leave your feedback. Thanks :)</p>
+                                    <p>
+                                        <strong>Template Version:</strong> 1.0<br>
+                                        <strong class="bold">By:</strong> <a href="https://themeforest.net/user/lucky_roo" class="text-primary" target="_blank">lucky_roo</a><br>
+                                        <strong class="bold">Response time (up to):</strong> 1 business day.<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 docs-content-inner" id="start-installation">
+                                    <h1>Installation</h1>
+                                    <p>Follow the steps below to setup your site template:</p>
+                                    <p>Please note that <strong>Dahlia</strong> is a simple HTML template and not a Wordpress theme/plugin.</p>
+                                    <ol>
+                                        <li>Log into your hosting space via an FTP software (Filezilla for example).</li>
+                                        <li>Unzip the downloaded package and open the <strong>html</strong> folder to find all the template files.</li>
+                                        <li>Below is the folder structure and needs to be uploaded to your website root directory:
+                                            <ul>
+                                                <li><code>html/css</code> - Stylesheets folder</li>
+                                                <li><code>html/images</code> - Images folder</li>
+                                                <li><code>html/img</code> - Images folder</li>
+                                                <li><code>html/js</code> - Javacripts folder</li>
+                                                <li><code>html/rsvp.php</code> – RSVP form PHP files</li>
+                                            </ul>
+                                        </li>
+                                        <li>Upload the HTML files corresponding to the variant of your choice along with all directories in the structure that they appear in your download package. Then, the HTML file should reside in the root directory, and all other files should reside inside their associated folder. <strong>You should upload all or specific HTML files as per your need.</strong></li>
+                                    </ol>
+
+                                    <br>
+                                    <p><span class="label label-danger">Tips</span> Do not start from scratch, use an existing page from the demo and modify it to learn how it works.</p>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+
+                            <div class="row">
+                                <div class="col-md-12 docs-content-inner" id="start-html-structure">
+                                    <h1>HTML Structure</h1>
+                                    <p><strong>Dahlia</strong> follows a simple and easy to customize coding structure. Here is the sample for your reference:</p>
+                                    <pre>
+&lt;!doctype html&gt;
+&lt;html lang="en" class="h-100 w-100"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Dahlia - Responsive Wedding Invitation&lt;/title&gt;`
+
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+        &lt;meta name="description" content=""&gt;
+        &lt;meta name="keywords" content=""&gt;
+
+        <span class="comment">&lt;!-- Required CSS files --&gt;</span>
+        &lt;link href="css/style.min.css" rel="stylesheet"&gt;
+        &lt;link href="css/custom.css" rel="stylesheet"&gt;
+
+        <span class="comment">&lt;!-- Favicon --&gt;</span>
+        &lt;link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png"&gt;
+        &lt;link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png"&gt;
+        &lt;link rel="icon" href="img/favicon.ico"&gt;
+    &lt;/head&gt;
+
+    &lt;body id="page-top" class="h-100 w-100"&gt;
+
+        <span class="comment">&lt;!-- Preloader Start --&gt;</span>
+        &lt;div class="preloader bg-white h-100 position-fixed w-100"&gt;
+            ...
+        &lt;/div&gt;
+        <span class="comment">&lt;!-- Preloader End --&gt;</span>
+
+        <span class="comment">&lt;!-- Header Start --&gt;</span>
+        &lt;header class="fixed-top"&gt;
+        ...    
+        &lt;/header&gt;
+        <span class="comment">&lt;!-- Header End --&gt;</span>
+
+        <span class="comment">&lt;!-- Spacer --&gt;</span>
+        &lt;span class="spacer d-block w-100"&gt;&lt;/span&gt;
+
+        <span class="comment">&lt;!-- Section - Hero Start --&gt;</span>
+        &lt;section id="hero" class="bg-img-cover bg-overlay position-relative"&gt;
+        ...    
+        &lt;/section&gt;
+        <span class="comment">&lt;!-- Section - Hero End --&gt;</span>
+
+        <span class="comment">&lt;!-- Section - The Couple Start --&gt;</span>
+        &lt;section id="the-couple"&gt;
+        ...    
+        &lt;/section&gt;
+        <span class="comment">&lt;!-- Section - The Couple End --&gt;</span>
+
+        <span class="comment">&lt;!-- Section - The Wedding Event Start --&gt;</span>
+        &lt;section id="the-wedding-event"&gt;
+        ...
+            <span class="comment">&lt;!-- Modal - How to Get There Start --&gt;</span>
+            &lt;id="how-to-get-there-modal" class="modal fade" tabindex="-1"&gt;
+            ...
+            &lt;/div&gt;
+            <span class="comment">&lt;!-- Modal - How to Get There End --&gt;</span>
+        &lt;/section&gt;
+        <span class="comment">&lt;!-- Section - The Wedding Event End --&gt;</span>
+
+        <span class="comment">&lt;!-- Section - Love Story Start --&gt;</span>
+        &lt;section id="love-story"&gt;
+        ...    
+        &lt;/section&gt;
+        <span class="comment">&lt;!-- Section - Love Story End --&gt;</span>
+
+        <span class="comment">&lt;!-- Section - Proposed Start --&gt;</span>
+        &lt;section id="proposed" class="bg-img-cover bg-overlay position-relative"&gt;
+        ...    
+        &lt;/section&gt;
+        <span class="comment">&lt;!-- Section - Proposed End --&gt;</span>
+
+        <span class="comment">&lt;!-- Section - Photos Start --&gt;</span>
+        &lt;section id="photos"&gt;
+        ...    
+        &lt;/section&gt;
+        <span class="comment">&lt;!-- Section - Photos End --&gt;</span>
+
+        <span class="comment">&lt;!-- Section - Wedding Gifts Start --&gt;</span>
+        &lt;section id="wedding-gifts" class="bg-img-cover bg-overlay position-relative"&gt;
+        ...    
+        &lt;/section&gt;
+        <span class="comment">&lt;!-- Section - Wedding Gifts End --&gt;</span>
+
+        <span class="comment">&lt;!-- Section - RSVP Start --&gt;</span>
+        &lt;section id="rsvp"&gt;
+        ...    
+        &lt;/section&gt;
+        <span class="comment">&lt;!-- Section - RSVP End --&gt;</span>
+
+        <span class="comment">&lt;!-- Footer Start --&gt;</span>
+        &lt;footer class="bg-img-cover bg-overlay position-relative"&gt;
+        ...    
+        &lt;/footer&gt;
+        <span class="comment">&lt;!-- Footer End --&gt;</span>
+
+        <span class="comment">&lt;!-- Required JS files --&gt;</span>
+        &lt;script src="js/script.min.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                                </div>
+                            </div>
+
+                            <div class="line"></div>
+                            <div class="row">
+                                <div class="col-md-12 docs-content-inner" id="start-page-link">
+                                    <h1>Page Link</h1>
+                                    <p>You can add link/button which direct you to other section of the same page with smooth scroll effect like it is one page website. You just need to add class: <code>page-scroll</code> and href should be the ID of the section as per the example shown below:</p>
+                                    <pre>
+&lt;a href="#the-couple" class="nav-link page-scroll"&gt;The Couple&lt;/a&gt;
+</pre>
+
+                                    <pre>
+<span class="comment">&lt;!-- Section - The Couple Start --&gt;</span>
+&lt;section id="the-couple"&gt;    
+...
+&lt;/section&gt;
+<span class="comment">&lt;!-- Section - The Couple End --&gt;</span>
+</pre>
+                                    <p><span class="label label-danger">Note</span>Please note that destination section should have valid ID.</p>
+
+                                    <h2>External Page Link</h2>
+                                    <pre>
+&lt;a href="https://themeforest.net/" target="_blank"&gt;External Page Link&lt;/a&gt;
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end start section -->
+
+                    <!-- contact form section -->
+                    <section id="contact-form" class="hidden">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 docs-content-inner">
+                                    <h1>RSVP Form</h1>
+
+                                    <p>Your RSVP form will not work unless you have your files running on a hosting server with PHP and Javascript. When you have your files ready on your hosting server, you need to edit the settings to make the email function work. To do this, please open <code>html/rsvp.php</code> file and change this line:</p>
+                                    <pre>
+// Replace with your email 
+$mail_to = 'youremail@yourdomain.com';
+</pre>
+
+                                    <p><span class="label label-danger">Important</span><br>Some hosting providers don't support <strong>PHP Mail Function</strong> automatically. So if you don't receive any message after changing mail address to yours, then contact with your hosting provider and they'll enable PHP Mail function. And everything would be great.</p>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </section>
+                    <!-- end contact form section -->
+
+                    <!-- credits section -->
+                    <section id="credits" class="hidden">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 docs-content-inner" id="credits">
+                                    <h1>Credits and Sources</h1>
+                                    <p>We would really love to take this opportunity to appreciate guys whose items were helpful to us to make Dahlia a really beautiful theme for our awesome users:</p>
+                                    <div class="col-md-12 no-padding">
+                                        <div class="col-md-12">
+                                            <h2 class="no-padding-top">Plugins</h2>
+                                            <ul class="credits">
+                                                <li><a href="http://getbootstrap.com/" class="text-primary" target="_blank">Bootstrap</a></li>
+                                                <li><a href="https://upjs.github.io/facile-validator/" class="text-primary" target="_blank">Facile Validator</a></li>
+                                                <li><a href="https://github.com/metafizzy/fizzy-ui-utils" class="text-primary" target="_blank">Fizzy UI utils</a></li>
+                                                <li><a href="https://flickity.metafizzy.co/" class="text-primary" target="_blank">Flickity</a></li>
+                                                <li><a href="https://imagesloaded.desandro.com/" class="text-primary" target="_blank">imagesLoaded</a></li>
+                                                <li><a href="https://isotope.metafizzy.co/" class="text-primary" target="_blank">Isotope</a></li>
+                                                <li><a href="https://veno.es/venobox/" class="text-primary" target="_blank">VenoBox</a></li>
+                                            </ul>
+                                            <br>
+                                            <br>
+                                            <h2 class="no-padding-top">Icons</h2>
+                                            <ul class="credits">
+                                                <li><a href="https://www.svgrepo.com/collection/wedding-7" class="text-primary" target="_blank">Wedding 7 Collection</a></li>
+                                            </ul>
+                                            <br>
+                                            <br>
+                                            <h2 class="no-padding-top">Images used on demo</h2>
+                                            <p>The images included in preview are for demonstration purposes and should always be replaced with your own work.</p>
+                                            <ul class="credits">
+                                                <li>Photo by <a href="https://unsplash.com/@laurenpelesky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" class="text-primary" target="_blank">Lauren Pelesky</a> on <a href="https://unsplash.com/photos/1zm6FNeob5Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" class="text-primary" target="_blank">Unsplash</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </section>
+                    <!-- end credits section -->
+
+                    <!-- refund policy section -->
+                    <section id="refund-policy" class="hidden">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 docs-content-inner" id="credits">
+                                    <h1>Refund Policy</h1>
+                                    <p>Read this <a href="https://themeforest.net/page/customer_refund_policy" class="text-primary" target="_blank">Article</a> before asking for a refund. The refund request will not be accepted in the following cases by the article:</p>
+                                    <img src="images/refund-policy.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </section>
+                    <!-- end refund policy section -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- scroll to top -->
+    <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <!-- scroll to top End... -->
+    <div id="footer"></div>
+    <script type='text/javascript' src="js/jquery.min.js"></script>
+    <script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/smooth-scroll.js"></script>
+    <script type='text/javascript' src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script type='text/javascript' src="js/custom.js"></script>
+</body>
+
+</html>
