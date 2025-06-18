@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Countdown</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+    }
+
+    .background {
+background: url('images/image.png') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(2px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .event-date {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #ff9cb5;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .event-title {
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .event-subtitle {
+      font-size: 18px;
+      color: #ffd6e1;
+      margin-bottom: 20px;
+    }
+
+    .countdown-title {
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .countdown {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .time-box {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px 25px;
+      min-width: 100px;
+      backdrop-filter: blur(4px);
+    }
+
+    .time-box .num {
+      font-size: 40px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .time-box .label {
+      font-size: 14px;
+      color: #ff9cb5;
+      margin-top: 5px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      .event-title {
+        font-size: 30px;
+      }
+
+      .countdown {
+        gap: 10px;
+      }
+
+      .time-box {
+        padding: 15px 18px;
+        min-width: 80px;
+      }
+
+      .time-box .num {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div class="background">
+    <div class="overlay">
+      <div class="event-date">📅 EVENT DATE</div>
+      <div class="event-title">Saturday, 21 June 2025</div>
+      <div class="event-subtitle">♡ Our Special Day ♡</div>
+      <div class="countdown-title">⏰ Time left until event</div>
+
+      <div class="countdown">
+        <div class="time-box">
+          <div class="num" id="days">0</div>
+          <div class="label">DAYS</div>
+        </div>
+        <div class="time-box">
+          <div class="num" id="hours">0</div>
+          <div class="label">HOURS</div>
+        </div>
+        <div class="time-box">
+          <div class="num" id="minutes">0</div>
+          <div class="label">MINUTES</div>
+        </div>
+        <div class="time-box">
+          <div class="num" id="seconds">0</div>
+          <div class="label">SECONDS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <script>
+    function updateCountdown() {
+      const eventDate = new Date("June 21, 2025 00:00:00").getTime();
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
+      document.getElementById("seconds").textContent = seconds;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>

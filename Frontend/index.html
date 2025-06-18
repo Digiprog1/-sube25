@@ -22,6 +22,114 @@
     <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="img/favicon.ico">
+
+      <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+    }
+
+    .background {
+background: url('images/IMG-20250609-WA0006.jpg') no-repeat center center/cover;
+      height: 90vh;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(2px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .event-date {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #ff9cb5;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .event-title {
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .event-subtitle {
+      font-size: 18px;
+      color: #ffd6e1;
+      margin-bottom: 20px;
+    }
+
+    .countdown-title {
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .countdown {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .time-box {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px 25px;
+      min-width: 100px;
+      backdrop-filter: blur(4px);
+    }
+
+    .time-box .num {
+      font-size: 40px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .time-box .label {
+      font-size: 14px;
+      color: #ff9cb5;
+      margin-top: 5px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      .event-title {
+        font-size: 30px;
+      }
+
+      .countdown {
+        gap: 10px;
+      }
+
+      .time-box {
+        padding: 15px 18px;
+        min-width: 80px;
+      }
+
+      .time-box .num {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 
 <body id="page-top" class="h-100 w-100">
@@ -218,9 +326,9 @@
             <div class="row gx-lg-5 justify-content-center">
               <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                     <div class="bg-white h-100 p-5 rounded shadow">
-                        <h3 class="font-alt fs-4 fw-bold text-uppercase">The Tradittionlal Marriage</h3>
+                        <h3 class="font-alt fs-4 fw-bold text-uppercase">The Engagement</h3>
                         <hr class="border-secondary sep-line">
-                        <p class="mb-4">Our journey began with a simple "yes" that changed everything. Join us as we celebrate the love and commitment that brought us here.</p>
+                        <p class="mb-4">Our journey began with a simple "yes" that changed everything.</p>
 
                         <div class="align-items-center d-flex mb-3">
                             <span class="icon-svg me-4"><img src="img/icon-wedding-calendar.svg" alt=""></span>
@@ -234,14 +342,13 @@
                         <div class="align-items-center d-flex mb-4">
                             <span class="icon-svg me-4"><img src="img/icon-wedding-arch.svg" alt=""></span>
                             <span>No 2 Olufemi Ojo Street By Baylord<br>
-                                 Bus-Stop, Beside Conquerors Assembly,<br>
+                                 Bus-Stop, Beside Conquerors Assembly,
                                  Shasha Road, Akowonjo, Akowonjo Lagos.
                             </span>
                         </div>
                         <!-- //.align-items-center -->
 
                         <div class="d-flex">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#how-to-get-there-modal" class="btn fs-9 ls-1 me-3">How To Get There</button>
                             <a href="https://maps.app.goo.gl/8qX6bu3KYMiTfQAt8" class="page-scroll btn border-0 fs-9 ls-1 text-decoration-underline" target="_blank">View Map</a>
                            <iframe><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5153543890365!2d3.2947344735037287!3d6.456194023944896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b88e18cd1e92d%3A0x457be98f728a70f2!2sThe%20Gospel%20Faith%20Mission%20International!5e0!3m2!1sen!2sng!4v1719179276423!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="btn btn-custom mt30 popup-gmaps">View
                                 on map</a></iframe>
@@ -255,11 +362,8 @@
                     <div class="bg-white h-100 p-5 rounded shadow">
                         <h3 class="font-alt fs-4 fw-bold text-uppercase">The Ceremony</h3>
                         <hr class="border-secondary sep-line">
-                        <p class="mb-4">Surrounded by loved ones, we will exchange vows and promises in a sacred union. The ceremony will take place at St. Patrick's Church at 9:00 AM.</p>
-<br>
-<br>
-<br>
-<br>
+                        <p class="mb-4">Surrounded by loved ones, we will exchange vows and promises in a sacred union.</p>
+
                         <div class="align-items-center d-flex mb-3">
                             <span class="icon-svg me-4"><img src="img/icon-wedding-calendar.svg" alt=""></span>
                             <span>
@@ -277,10 +381,11 @@
                             </span>
                         </div>
                         <!-- //.align-items-center -->
-
+<br>
+<br>
                         <div class="d-flex">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#how-to-get-there-modal" class="btn fs-9 ls-1 me-3">How To Get There</button>
-                            <a href="https://goo.gl/maps/forfEYxSuKmr3w6e8?coh=178572&entry=tt" class="page-scroll btn border-0 fs-9 ls-1 text-decoration-underline" target="_blank">View Map</a>
+                            <a href="https://maps.app.goo.gl/xr5M6L4RYERe4fyv8" class="page-scroll btn border-0 fs-9 ls-1 text-decoration-underline" target="_blank">View
+                                 Map</a>
                         </div>
                         <!-- //.d-flex -->
                     </div>
@@ -292,9 +397,8 @@
                     <div class="bg-white h-100 p-5 rounded shadow">
                         <h3 class="font-alt fs-4 fw-bold text-uppercase">The Reception</h3>
                         <hr class="border-secondary sep-line">
-                        <p class="mb-4">After the ceremony, join us for an evening of celebration, dinner, and dancing at The Mayflower Hotel. Let’s create memories that last a lifetime!</p>
-<br>
-<br>
+                        <p class="mb-4">After the ceremony, join us for an evening of celebration, dinner, and dancing</p>
+
                         <div class="align-items-center d-flex mb-3">
                             <span class="icon-svg me-4"><img src="img/icon-wedding-calendar.svg" alt=""></span>
                             <span>
@@ -314,7 +418,6 @@
                         <!-- //.align-items-center -->
 
                         <div class="d-flex">
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#how-to-get-there-modal" class="btn fs-9 ls-1 me-3">How To Get There</button>
                             <a href="https://maps.app.goo.gl/8qX6bu3KYMiTfQAt8" class="page-scroll btn border-0 fs-9 ls-1 text-decoration-underline" target="_blank">View Map</a>
                            <iframe><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5153543890365!2d3.2947344735037287!3d6.456194023944896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b88e18cd1e92d%3A0x457be98f728a70f2!2sThe%20Gospel%20Faith%20Mission%20International!5e0!3m2!1sen!2sng!4v1719179276423!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="btn btn-custom mt30 popup-gmaps">View
                                 on map</a></iframe>
@@ -330,79 +433,41 @@
         <!-- //.container -->
 
         <!-- Modal - How to Get There Start -->
-        <div id="how-to-get-there-modal" class="modal fade" tabindex="-1">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content rounded">
-                    <div class="modal-header justify-content-center">
-                        <h3 class="modal-title fs-4 font-alt fw-bold text-uppercase">How To Get To The Events</h3>
-                        <button type="button" class="end-0  fs-3 me-3 position-absolute" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <!-- //.modal-header -->
 
-                    <div class="modal-body p-lg-4">
-                        <div class="row">
-                            <div class="col-lg-6 mb-5 mb-lg-0">
-                                <div class="mb-4 text-center">
-                                    <h4 class="font-alt fs-5 fw-bold text-primary text-uppercase">The Ceremony</h4>
-                                    <p class="font-alt fst-italic text-muted">(St. Patrick's Church)</p>
-                                    <img src="images/the-wedding-event-modal-1.jpg" alt="" class="img-fluid rounded">
-                                </div>
-                                <!-- //.mb-4 -->
-
-                                <div class="mb-4">
-                                    <h6 class="fw-bold ls-1 text-uppercase">By Car</h6>
-                                    <hr class="border-secondary my-2 sep-line">
-                                    <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                </div>
-                                <!-- //.mb-4 -->
-
-                                <h6 class="fw-bold ls-1 text-uppercase">By Train</h6>
-                                <hr class="border-secondary my-2 sep-line">
-                                <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                            </div>
-                            <!-- //.col-lg-6 -->
-
-                            <div class="col-lg-6">
-                                <div class="mb-4 text-center">
-                                    <h4 class="font-alt fs-5 fw-bold text-primary text-uppercase">The Reception</h4>
-                                    <p class="font-alt fst-italic text-muted">(The Mayflower Hotel)</p>
-                                    <img src="images/the-wedding-event-modal-2.jpg" alt="" class="img-fluid rounded">
-                                </div>
-                                <!-- //.mb-4 -->
-
-                                <div class="mb-4">
-                                    <h6 class="fw-bold ls-1 text-uppercase">By Car</h6>
-                                    <hr class="border-secondary my-2 sep-line">
-                                    <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                </div>
-                                <!-- //.mb-4 -->
-
-                                <h6 class="fw-bold ls-1 text-uppercase">By Train</h6>
-                                <hr class="border-secondary my-2 sep-line">
-                                <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                            </div>
-                            <!-- //.col-lg-6 -->
-                        </div>
-                        <!-- //.row -->
-                    </div>
-                    <!-- //.modal-body -->
-
-                    <div class="modal-footer d-sm-none">
-                        <button class="btn fs-9 w-100" data-bs-dismiss="modal" aria-label="Close">Okay, I get it!</button>
-                    </div>
-                    <!-- //.modal-footer -->
-                </div>
-                <!-- //.modal-content -->
-            </div>
-            <!-- //.modal-dialog -->
-        </div>
         <!-- Modal - How to Get There End -->
 
     </section>
     <!-- Section - The Wedding Event End -->
 
+                <section>
+            <div class="background">
+                <div class="overlay">
+                <div class="event-date">📅 EVENT DATE</div>
+                <div class="event-title">Saturday, 21 June 2025</div>
+                <div class="event-subtitle">♡ Our Special Day ♡</div>
+                <div class="countdown-title">⏰ Time left until event</div>
+
+                <div class="countdown">
+                    <div class="time-box">
+                    <div class="num" id="days">0</div>
+                    <div class="label">DAYS</div>
+                    </div>
+                    <div class="time-box">
+                    <div class="num" id="hours">0</div>
+                    <div class="label">HOURS</div>
+                    </div>
+                    <div class="time-box">
+                    <div class="num" id="minutes">0</div>
+                    <div class="label">MINUTES</div>
+                    </div>
+                    <div class="time-box">
+                    <div class="num" id="seconds">0</div>
+                    <div class="label">SECONDS</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </section>
 
     <!-- Section - Love Story Start -->
     <section id="love-story">
@@ -431,8 +496,8 @@
                         <div class="col-lg-6 text-center text-lg-start">
                             <h4 class="font-alt">First Meet Each Other</h4>
                             <hr class="border-secondary mx-auto mx-lg-0 sep-line">
-                            <p>Milea and Dilan met the modern way: by swiping right on Tinder in 2021. Their first date was a bit of a disaster-it started pouring while they were enjoying their outdoor dinner, Dilan fell into a mud puddle, and they had to wait over an hour for a subway train. However, their second date went much better and they've been together ever since.</p>
-                            <p class="m-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <p>Bose and Sukanmi met the olden way: by  seeing each other in a gatheringas a bit of a disaster-it started pouring while they were enjoying their outdoor date.</p>
+                            <p class="m-0">T</p>
                         </div>
                         <!-- //.col-lg-6 -->
                     </div>
@@ -447,12 +512,7 @@
                         </div>
                         <!-- //.col-md-8 -->
 
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h4 class="font-alt">When We Go Out Together</h4>
-                            <hr class="border-secondary mx-auto mx-lg-0 sep-line">
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            <p class="m-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                        </div>
+
                         <!-- //.col-lg-6 -->
                     </div>
                     <!-- //.carousel-cell -->
@@ -466,13 +526,6 @@
                         </div>
                         <!-- //.col-md-8 -->
 
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h4 class="font-alt">Have a Lovely Time</h4>
-                            <hr class="border-secondary mx-auto mx-lg-0 sep-line">
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            <p class="m-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                        </div>
-                        <!-- //.col-lg-6 -->
                     </div>
                     <!-- //.carousel-cell -->
 
@@ -830,6 +883,25 @@
     <script src="js/script.min.js"></script>
 
     <script>
+         function updateCountdown() {
+      const eventDate = new Date("June 21, 2025 00:00:00").getTime();
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
+      document.getElementById("seconds").textContent = seconds;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
         let isSubmitting = false;
 
         document.getElementById("rsvpForm").addEventListener("submit", function (e) {

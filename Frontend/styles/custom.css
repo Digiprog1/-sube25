@@ -1,21 +1,37 @@
 #hero {
-    background-image: url("../images/IMG-20250609-WA0012.jpg")
+  background-image: url("../images/IMG-20250609-WA0012.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 #the-wedding-event {
-    background-image: url("../images/IMG-20250609-WA0001.jpg")
+  background-image: url("../images/image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
 }
 
+
 #proposed {
-    background-image: url("../images/IMG-20250609-WA0008.jpg")
+  background-image: url("../images/IMG-20250609-WA0008.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 #wedding-gifts {
-    background-image: url("../images/IMG-20250609-WA0014.jpg")
+  background-image: url("../images/IMG-20250609-WA0014.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 footer {
-    background-image: url("../images/IMG-20250609-WA0001.jpg")
+  background-color: purple;
 }
 
-/*# sourceMappingURL=custom.min.css.map */
