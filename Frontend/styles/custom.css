@@ -4,14 +4,17 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  
 }
 
 #the-wedding-event {
   background-image: url("../images/image.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+
 }
 
 
